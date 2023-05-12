@@ -8,7 +8,7 @@ const devOnlyPlugins = [getStartedPlugin()]
 
 export default defineConfig({
   name: 'default',
-  title: 'silver-swan',
+  title: 'Brøk Håndbok',
 
   projectId: '3jluwli0',
   dataset: 'production',
