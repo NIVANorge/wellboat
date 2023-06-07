@@ -15,31 +15,29 @@ export default {
       of: [
         {
           type: 'block',
-          of: [
-            {
-              title: 'Case',
-              name: 'case',
-              type: 'reference',
-              to: [{type: 'caseStudy'}],
-            },
-            {
-              title: 'Publikasjon',
-              name: 'publication',
-              type: 'reference',
-              to: [{type: 'publication'}],
-            },
-            {
-              title: 'Bilde',
-              type: 'image',
-            },
-            {
-              title: 'Video',
-              type: 'file',
-            },
-            {
-              type: 'card',
-            },
-          ],
+        },          
+        {
+          title: 'Case',
+          name: 'case',
+          type: 'reference',
+          to: [{type: 'caseStudy'}],
+        },
+        {
+          title: 'Publikasjon',
+          name: 'publication',
+          type: 'reference',
+          to: [ {type: 'publication'}],
+        },
+        {
+          title:  'Bilde',
+          type: 'image',
+        },
+        {
+          title: 'Video',
+          type: 'file',
+        },
+        {
+          type: 'card',
         },
       ],
     },
