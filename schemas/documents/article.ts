@@ -18,20 +18,22 @@ export default {
           of: [
             {
               title: 'Case',
-                type: 'reference',
-                to: [{type: 'caseStudy'}],
-              },
-              {
-                title: 'Publikasjon',
-                  type: 'reference',
-                  to: [ {type: 'publication'}],
-                },
+              name: 'case',
+              type: 'reference',
+              to: [{type: 'caseStudy'}],
+            },
             {
-              title:   'Bilde',
+              title: 'Publikasjon',
+              name: 'publication',
+              type: 'reference',
+              to: [{type: 'publication'}],
+            },
+            {
+              title: 'Bilde',
               type: 'image',
             },
             {
-                title: 'Video',
+              title: 'Video',
               type: 'file',
             },
             {
