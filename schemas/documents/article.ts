@@ -39,7 +39,7 @@ export default {
         {
           title: 'Video',
           type: 'file',
-          icon: () => '📹',
+          icon: () => '🎥',
         },
       ],
     },

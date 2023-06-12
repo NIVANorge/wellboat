@@ -20,6 +20,6 @@ export default {
         {   name: 'format', type: 'string', title: 'Format' },
         {   name: 'body',      type: 'array', title: 'Brødtekst', of: [{ type: 'block' }] },
         {   name: 'topics', type: 'array', title: 'Emner', of: [{ type: 'reference', to: { type: 'topic' } }] },
-        {   name: 'access', type: 'string', title: 'Tilgang (åpen/lukket)' },
+        {   name: 'access', type: 'string', title: 'Tilgang', options: { list: ['Åpen', 'Lukket'] } },
         ],
 }

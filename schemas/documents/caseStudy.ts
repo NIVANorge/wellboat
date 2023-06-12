@@ -16,14 +16,16 @@ export default {
       of: [
         {
           type: 'block',
-          of: [
-            {
+        },
+        {
               title: 'Bilde',
               type: 'image',
+              icon: () => '🖼️',
             },
             {
               title: 'Video',
               type: 'file',
+              icon: () => '🎥',
             },
             {
               title: 'Artikkel',
@@ -40,6 +42,4 @@ export default {
           ],
         },
       ],
-    },
-  ],
 }
