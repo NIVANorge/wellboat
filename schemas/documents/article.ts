@@ -6,7 +6,7 @@ export default {
   fields: [
     {name: 'title', type: 'string', title: 'Tittel'},
     {name: 'slug', type: 'slug', title: 'Internlenke', options: {source: 'title', maxLength: 96}},
-    {name: 'description', type: 'string', title: 'Beskrivelse'},
+    {name: 'description', type: 'text', title: 'Kort Beskrivelse', description: 'Kort beskrivelse som forteller hva artikkelen inneholder. Vises på forsiden som forhåndsvisningstekst og i artikkelen som ingress/introduksjon'},
     {name: 'publishedAt', type: 'datetime', title: 'Publisert dato'},
     {
       name: 'body',
@@ -15,7 +15,15 @@ export default {
       of: [
         {
           type: 'block',
-        },          
+        },
+        {
+          type: 'card',
+        },
+        {
+          title:  'Bilde',
+          type: 'image',
+          icon: () => '🖼️',
+        },
         {
           title: 'Case',
           name: 'case',
@@ -29,15 +37,9 @@ export default {
           to: [ {type: 'publication'}],
         },
         {
-          title:  'Bilde',
-          type: 'image',
-        },
-        {
           title: 'Video',
           type: 'file',
-        },
-        {
-          type: 'card',
+          icon: () => '📹',
         },
       ],
     },
