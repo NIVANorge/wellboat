@@ -2,11 +2,6 @@ import React from "react"
 import {Card, Text, Label, Box} from '@sanity/ui'
 
 export const CardPreview = (value) => {
-  const cardTone = {
-    risk: 'critical',
-    recommendation: 'primary'
-  }
-
   const typeMap = {
     risk: {
       tone: 'critical',
