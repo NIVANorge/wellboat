@@ -15,13 +15,13 @@ export const CardPreview = (value) => {
     }
   }
 
-  const type = typeMap[value.type]
+  const type = typeMap[value  .type]
 
   return (
-      <Card padding={4}  tone={type.tone} radius={3}>
+      <Card padding={4}  tone={type?.tone || 'default'} radius={3}>
         <Box marginBottom={4}>
           <Label size={2}>
-            {type.icon} {type.label}
+            {type?.icon} {type?.label}
           </Label>
         </Box>
         <Text size={2}> 
